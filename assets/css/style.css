@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Roboto:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+:root{
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Rubik";
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+body{
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-heading);
+    font-weight:700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body); 
+    transition: all 0.4s ease;
+} 
+
+a:hover{
+    color:var(--color-brand);
+} 
+
+img{
+    width: 100%;
+}
+
+.navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color:white;
+}
+
+.navbar .nav-link:hover{
+   color:var(--color-brand);
+   /* changes color when buttons are hovered over */
+}
+
+
+
+.navbar{
+    background-color:var(--color-base);
+}
+
+
+.full-height {
+    min-height:100vh;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:80px;
+    padding-bottom:80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Only display the navbar to the left when the screen is big enough */
+
+@media(min-width: 992px){
+    .navbar{
+        min-height:100vh;
+        width:var(--sidbar-width);
+        background:linear-gradient(rgba(3, 63, 71, 0.9), rgba(3, 63, 71, 0.9));
+        background-size:cover;
+        background-position:center;
+    }
+
+    #content-wrapper{
+        padding-left: var(--sidbar-width);
+    }
+}
+
+#img-container{
+    width:200px;
+}
+
+#profile_pic{
+    object-fit: cover;
+    border-radius:200px;
+    border: solid var(--color-brand);
+    border-width: 2.5px;
+}
+
+.info{
+    display:flex;
+}
+
+.michigan{
+    height: 20px;
+    width: auto;
+}
+
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color:var(--color-brand);
+    border-color:var(--color-brand);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color:var(--color-base);
+    border-color:var(--color-brand2);
+}
+
+.link-custom{
+    font-weight: 700;
+    position:relative;
+}
+
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top:110%;
+    transition: all 2.5s;
+}
+
+.link-custom:hover::after{
+    width: 100%;
+}
+
+#project-1{
+    max-height: 30% vh;
+    max-width: 40% vw;
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Zhang Aspiring Software Engineer</title>
+    <link rel = "stylesheet" href = "./assets/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./assets/css/aos.css">
+    <link rel = "stylesheet" href = "./assets/css/line-awesome.min.css">
+    <link rel = "stylesheet" href = "./assets/css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid flex-lg-column text-lg-center">
+          <a class="navbar-brand mb-lg-4 m-0" href="#">
+            <span class = "h3 fw-bold text-lg-center mb-lg-4 d-lg-none">Steven Zhang</span>
+            <img src = "./assets/my_images/profile_pic.png" class = "d-none d-lg-block mx-auto d-block" id = "profile_pic">
+                
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto flex-lg-column text-lg-center">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+
+
+
+              
+            </ul>
+        
+          </div>
+        </div>
+    </nav>
+
+
+    <div id = "content-wrapper">
+        <!--This is the home page -->
+        <section id = "home" class = "full-height px-lg-5">
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-lg-10" data-aos="fade-up">
+                        <h1 class = "display-4 fw bold"> Hi &#128075; <span class = "type"></span></h1> 
+                        <div class = "info">
+                            <p class = "lead mt-2 mb-4" data-aos = "fade-up" data-aos-delay = "300"> Currently studying Computer Science at the University of Michigan
+                                <span><img class = "michigan" src = "./assets/my_images/block_m.png"></span>
+                            </p> 
+                            
+                        </div>
+                        <div class = "rest" data-aos = "fade-up" data-aos-delay = "700">
+                          
+                          <a href = "#work" class = "btn btn-brand me-3"> Explore my Work</a>
+                          <a href = "#" class = "link-custom"> Call: (407) 714 7638 </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "work" class = "full-height px-11g">
+            <div class = "container">
+                <div class = "row pb-4" data-aos = "fade-up">
+                    <div class = "col-lg-8">
+                        <h1> My Projects</h1>
+                    </div>
+                </div>
+
+                <div class = "row">
+                    <div class = "col-lg-6">
+                        <div class = "card-custom rounded-4 bg-base shadow-effect">
+                            <div class = "card-custom-image rounded-4">
+                                <img class = "rounded-4" id = "project-1" src = "./assets/my_images/Tic-tac-toe.png" alt = "">
+                            </div>
+
+                            <div class = "card-custom-content p-4">
+                                <h4>Tic Tac Toe</h4>
+                                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </div>
+
+    <script src = "./assets/js/aos.js"></script>
+    <script src = "./assets/js/bootstrap.bundle.min.js"></script>
+    <script src = "./assets/js/main.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+      
+            var typed= new Typed(".type", {
+                strings: ["I'm Steven Zhang"],
+                typeSpeed: 90,
+                
+                loop: false,
+                onComplete: function(self) { self.cursor.remove() }
+            });
+
+           
+
+        </script>
+</body>
+</html>
