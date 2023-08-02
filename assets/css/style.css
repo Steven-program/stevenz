@@ -85,6 +85,21 @@ img{
     }
 }
 
+@media(max-width: 510px){
+    #explore{
+       padding-left: 1vh;
+       padding-right: 1vh;
+    }
+}
+
+@media(max-width: 475px){
+    #explore{
+       padding-left: 1vh;
+       padding-right: 1vh;
+       font-size: 1.82vh;
+    }
+}
+
 #img-container{
     width:200px;
 }
@@ -145,5 +160,19 @@ img{
 #project-1{
     max-height: 30% vh;
     max-width: 40% vw;
+}
+
+.l-logo{
+    font-size:55px;
+}
+
+.michigan{
+    margin-bottom:2px;
+}
+
+.rest{
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
