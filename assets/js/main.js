@@ -13,3 +13,9 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+function changeButton(){
+  const buttonElement = document.querySelector('#submit-button');
+  buttonElement.classList.add('button-see-through')
+  buttonElement.innerText = 'Sent!';
+}

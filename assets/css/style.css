@@ -176,10 +176,7 @@ img{
     gap:10px;
 }
 
-#about{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+.button-see-through{
+    opacity: 0.6;
 }
 
